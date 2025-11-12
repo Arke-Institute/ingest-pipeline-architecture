@@ -1,0 +1,29 @@
+# Ignore all subdirectories (component repos)
+arke-upload-client/
+arke-upload-frontend/
+arke-ingest-worker/
+arke-ingest-ui/
+arke-ingest-status/
+arke-orchestrator/
+arke-preprocessing-orchestrator/
+arke-preproccessing-orchestrator/
+arke-preproccess-tiff-worker/
+arke-preprocess-image-resize/
+arke-ocr-service/
+arke-cdn-worker/
+arke-shared/
+ai-services/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temp files
+*.log
+*.tmp
