@@ -1138,6 +1138,11 @@ curl https://orchestrator.arke.institute/health?check=services
 - Queue batch sizes: Prevent memory exhaustion
 - Timeouts: Long-running operation protection
 
+**Durable Object Storage Limits** (see [OPERATIONAL_LIMITS.md](./OPERATIONAL_LIMITS.md) for details):
+- Max files per batch: ~5,000 (recommended: 1-3,000)
+- Max files per directory: ~2,000
+- Per-key SQLite limit: ~1-2MB (mitigated by sharding)
+
 ---
 
 ## Future Enhancements
@@ -1174,6 +1179,9 @@ Each component has detailed documentation in its directory:
 - `QUEUE_MESSAGE_SPEC.md` - Message format documentation (ingest-worker)
 - `wrangler.jsonc` - Configuration files with all bindings
 - `README.md` - Component-specific setup and usage
+
+**Pipeline-wide documentation**:
+- [OPERATIONAL_LIMITS.md](./OPERATIONAL_LIMITS.md) - Batch size limits, SQLite constraints, recovery procedures
 
 ---
 
